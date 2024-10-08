@@ -1659,3 +1659,12 @@
 		min-height: auto !important;
 	}
   }
+
+  @media (max-width: 576px) {
+	.sec-title > h2{
+		font-size: 25px;
+	  }
+	  #navbarSupportedContent li a {
+		color: #000!important;
+	  }
+	}
