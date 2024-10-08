@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		/* Style for the navigation menu */
+		.navigation li {
+			position: relative;
+		}
+
+		.navigation li a {
+			text-decoration: none;
+			color: #000;
+			/* Default text color */
+			padding: 10px;
+			display: inline-block;
+			transition: color 0.3s ease;
+			/* Smooth transition for color change */
+		}
+
+		.navigation li a::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 5px;
+			width: 100%;
+			height: 2px;
+			background-color: #fc9a36;
+			/* Underline color */
+			transform: scaleX(0);
+			transform-origin: bottom right;
+			transition: transform 0.3s ease;
+		}
+
+		.navigation li a.active {
+			color: #fc9a36;
+			/* Change text color to match underline when active */
+		}
+
+		.navigation li a.active::after {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		}
+
+		/* Add this rule to ensure active state overrides other styles */
+		.navigation li a.active {
+			color: #fc9a36 !important;
+			/* Force the color change */
+		}
+	</style>
+	<meta charset="utf-8">
+	<title>Mawj Platform</title>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merienda:wght@400;700&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+	<script src="js/route.js" defer></script>
+</head>
+
+<body>
+
+	<div class="page-wrapper">
+
+		<!-- Preloader -->
+		<div class="preloader"></div>
+
+		<!-- Main Header -->
+		<header class="main-header header-style-two">
+
+			<!-- Header Lower -->
+			<div class="header-lower">
+				<div class="auto-container">
+					<div class="inner-container clearfix">
+
+						<div class="pull-left logo-box">
+							<div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="Mawj Platform"
+										title=""></a>
+							</div>
+						</div>
+
+						<div class="pull-right nav-outer clearfix">
+							<!-- Mobile Navigation Toggler -->
+							<div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span></div>
+							<!-- Main Menu -->
+							<nav class="main-menu show navbar-expand-md">
+
+								<div class="navbar-header">
+									<button class="navbar-toggler" type="button" data-toggle="collapse"
+										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+										aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<div class="language-switcher" style="margin-left: 15px;">
+									<a href="index.html">English</a> |
+									<a href="index.html">العربية</a>
+								</div>
+
+								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+
+										<li><a style="color: #f1f5f8;font-weight: 600;" href="index.html">Home</a></li>
+										<li><a style="color: #f1f5f8;font-weight: 600;" href="about.html">About us</a>
+										</li>
+										<li><a style="color: #f1f5f8;font-weight: 600;"
+												href="services.html">Services</a></li>
+										<li><a style="color: #f1f5f8;font-weight: 600;"
+												href="companies.html">Companies</a></li>
+										<li><a style="color: #f1f5f8;font-weight: 600;" href="blog.html">Blogs</a></li>
+										<li><a style="color: #f1f5f8;font-weight: 600;" href="contact.html">Contact
+												us</a></li>
+									</ul>
+								</div>
+
+								<script>
+									document.addEventListener('DOMContentLoaded', function () {
+										// Get the current page URL
+										var currentUrl = window.location.href;
+
+										// Get all the navigation links
+										var navLinks = document.querySelectorAll('.navigation li a');
+
+										// Loop through each link
+										navLinks.forEach(function (link) {
+											// Check if the link's href matches the current URL
+											if (link.href === currentUrl) {
+												link.classList.add('active');
+											}
+										});
+									});
+
+								</script>
+
+							</nav>
+							<!-- Main Menu End-->
+
+							<!-- Outer Box -->
+
+							<div class="outer-box">
+
+								<!-- Search Btn -->
+								<!-- <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span>
+								</div> -->
+
+								<!-- Cart Box -->
+								<!-- <div class="cart-box">
+									<div class="dropdown">
+										<button class="cart-box-btn dropdown-toggle" type="button" id="dropdownMenu2"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+												class="flaticon-shopping-cart-1"></span></button>
+										<div class="dropdown-menu pull-right cart-panel"
+											aria-labelledby="dropdownMenu2">
+
+											<div class="cart-product">
+												<div class="inner">
+													<div class="cross-icon"><span class="icon fa fa-remove"></span>
+													</div>
+													<div class="image"><img src="images/resource/post-thumb-1.jpg"
+															alt="" /></div>
+													<h3><a href="shop-single.html">Product 01</a></h3>
+													<div class="quantity-text">Quantity 1</div>
+													<div class="price">$99.00</div>
+												</div>
+											</div>
+											<div class="cart-product">
+												<div class="inner">
+													<div class="cross-icon"><span class="icon fa fa-remove"></span>
+													</div>
+													<div class="image"><img src="../images/resource/post-thumb-1.jpg">
+															alt="" /></div>
+													<h3><a href="shop-single.html">Product 02</a></h3>
+													<div class="quantity-text">Quantity 1</div>
+													<div class="price">$99.00</div>
+												</div>
+											</div>
+											<div class="cart-total">Sub Total: <span>$198</span></div>
+											<ul class="btns-boxed">
+												<li><a href="shoping-cart.html">View Cart</a></li>
+												<li><a href="checkout.html">CheckOut</a></li>
+											</ul>
+
+										</div>
+									</div>
+								</div> -->
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--End Header Upper-->
+
+			<!-- Mobile Menu  -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+
+				<nav class="menu-box">
+					<div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt="Mawj Platform"
+								title=""></a></div>
+					<div class="menu-outer">
+						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+					</div>
+				</nav>
+			</div><!-- End Mobile Menu -->
+
+		</header>
+		<!-- End Main Header -->
+
+		<!-- Banner Slider -->
+		<section class="banner-section">
+			<!-- <div class="icon-layer-one" style="background-image:url(images/icons/icon-11.png)"></div>
+			<div class="icon-layer-two" style="background-image:url(images/icons/icon-3.png)"></div>
+			<div class="icon-layer-three" style="background-image:url(images/icons/pattern-9.png)"></div> -->
+
+
+
+
+
+
+
+			<div class="auto-container">
+				<div class="row clearfix">
+
+					<!-- Content Column -->
+					<div class="content-column col-lg-6 cl-md-12 col-sm-12">
+						<div class="inner-column">
+							<h1>CONNECT <br> YOU WITH <br> CLIENTS !</h1>
+							<div class="text">Connect your business services with prospective clients </div>
+							<a class="btn-style-five theme-btn" href="services.html"><span class="txt">GET
+									STARTED</span></a>
+							<div class="signup" style="margin-left:-50px;">Sign up your business now ! <a
+									href="services.html">Sign up</a></div>
+						</div>
+					</div>
+
+					<!-- Image Column -->
+					<div class="image-column col-lg-6 cl-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="color-layer"></div>
+							<div class="color-layer-two"></div>
+							<!-- <div class="icon-layer-four" style="background-image:url(images/icons/pattern-8.png)"></div>
+							<div class="icon-layer-five" style="background-image:url(images/icons/icon-12.png)"></div>
+							<div class="icon-layer-six" style="background-image:url(images/icons/icon-3.png)"></div>
+							<div class="icon-layer-seven" style="background-image:url(images/icons/icon-12.png)"></div> -->
+							<div class="image">
+								<img src="images/background/app.png" alt="" />
+							</div>
+							<div class="text-box">
+								<span class="icon flaticon-edit"></span>
+								Expand your growth opportunities <br> with our platform
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- End Banner Slider -->
+
+		<!-- Counter Section Two -->
+		<section class="counter-section style-two">
+			<div class="auto-container">
+				<div class="inner-container">
+					<!-- Fact Counter -->
+					<div class="fact-counter style-two">
+						<div class="row clearfix">
+
+							<!--Column-->
+							<div class="column counter-column col-lg-3 col-md-6 col-sm-12" style="margin-left:175px;">
+								<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+									<div class="content">
+										<div class="icon flaticon-value"></div>
+										<div class="count-outer count-box">
+											<span class="count-text" data-speed="2500" data-stop="1000">0</span>+
+										</div>
+										<h6 class="counter-title">App Users</h6>
+									</div>
+								</div>
+							</div>
+
+							<!--Column-->
+							<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+								<div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+									<div class="content">
+										<div class="icon flaticon-brazil"></div>
+										<div class="count-outer count-box alternate">
+											<span class="count-text" data-speed="3000" data-stop="500">0</span>+
+										</div>
+										<h6 class="counter-title">Registered Company</h6>
+									</div>
+								</div>
+							</div>
+
+							<!--Column-->
+							<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+								<div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+									<div class="content">
+										<div class="icon flaticon-focus"></div>
+										<div class="count-outer count-box">
+											<span class="count-text" data-speed="3000" data-stop="500">0</span>+
+										</div>
+										<h6 class="counter-title">Published Projects</h6>
+									</div>
+								</div>
+							</div>
+
+							<!--Column-->
+							<!--<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+								<div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
+									<div class="content">
+										<div class="icon flaticon-conversation-1"></div>
+										<div class="count-outer count-box">
+											<span class="count-text" data-speed="2500" data-stop="300">0</span>+
+										</div>
+										<h6 class="counter-title">Registered Experts</h6>
+									</div>
+								</div>
+							</div>!-->
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!--End Counter Section Two -->
+
+		<!-- Consult Section Two -->
+		<section class="consult-section-two">
+			<!-- <div class="icon-layer-one" style="background-image:url(images/icons/icon-3.png)"></div> -->
+			<div class="auto-container">
+				<div class="row clearfix">
+
+					<!-- Content Column -->
+					<div class="content-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="sec-title">
+								<h2>Post Your Requirements <br> & Get Different Quotations</h2>
+							</div>
+							<div class="bold-text">We know you’re busy. That’s why we take the hassle out of finding
+								best service provider.
+								Our focus is to get you so many Quotations by Registered and trusted service provider in
+								Real Estate Industry </div>
+							<div class="blocks-outer">
+								<!-- Feature Block -->
+								<div class="feature-block">
+									<div class="inner-box">
+										<div class="icon flaticon-charging"></div>
+										<h5>One Tender, Many Quotations</h5>
+										<p>Understand the market price before start working with any company. Mawj
+											Tender helps you receive different quotations from Professional Companies
+										</p>
+									</div>
+								</div>
+								<!-- Feature Block -->
+								<div class="feature-block">
+									<div class="inner-box">
+										<div class="icon flaticon-correct"></div>
+										<h5>Positive Thoughts</h5>
+										<p>Discover and think to take the right action with the right company through
+											browsing Companies profiles</p>
+									</div>
+								</div>
+							</div>
+							<div class="lower-image titlt" data-tilt data-tilt-max="4">
+
+								<img src="images/background/tenders2.png" alt="mawj tender" />
+							</div>
+						</div>
+					</div>
+
+					<!-- Image Column -->
+					<div class="image-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="color-layer"></div>
+							<!-- <div class="icon-layer-two" style="background-image:url(images/icons/icon-8.png)"></div>
+							<div class="icon-layer-three" style="background-image:url(images/icons/icon-12.png)"></div>
+							<div class="icon-layer-four" style="background-image:url(images/icons/icon-11.png)"></div> -->
+							<!-- <div class="color-layer-two"></div> -->
+							<div class="image wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<img src="images/background/tender.png" alt="Mawj platform" />
+							</div>
+							<!-- <div class="image-content wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<h2>Learn the latest skills like business <br> consulting, design, IT </h2>
+								<div style="text-align:right">
+									<a href="courses-single.html" class="consult-link">Learn Motivation</a>
+								</div>
+							</div> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Consult Section Two -->
+
+		<!-- Services Section -->
+		<section class="services-section">
+			<!-- <div class="icon-layer-one" style="background-image:url(images/icons/icon-4.png)"></div>
+			<div class="icon-layer-two" style="background-image:url(images/icons/icon-5.png)"></div>
+			<div class="icon-layer-three" style="background-image:url(images/icons/icon-4.png)"></div>
+			<div class="icon-layer-four" style="background-image:url(images/icons/icon-11.png)"></div> -->
+			<div class="icon-layer-five" style="background-image:url(images/background/pattern-4.png)"></div>
+			<div class="icon-layer-six" style="background-image:url(images/background/pattern-4.png)"></div>
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title centered">
+					<div class="title">Affordable Services</div>
+					<h2>How We Can Improve <br> Your Business With Our Strategy</h2>
+				</div>
+				<div class="inner-container">
+					<div class="circle-one"></div>
+					<div class="circle-two"></div>
+					<div class="row clearfix">
+						<!-- Column -->
+						<div class="column col-lg-6 col-md-12 col-sm-12">
+							<!-- Services Block -->
+							<div class="services-block">
+								<div class="inner-box">
+									<div class="content">
+
+										<h5><a href="services.html">Publishing your business profile</a></h5>
+										<div class="text">Show clients your profile and overview about your business.
+										</div>
+										<a href="services.html" class="explore">Explore <span class="arrow"><img
+													src="images/icons/arrow-2.png" alt="" /></span></a>
+									</div>
+								</div>
+							</div>
+							<!-- Title Block -->
+							<div class="title-block">
+								<div class="inner-block">
+									<div class="sec-title">
+										<h2>Show your project in details</h2>
+										<div class="text">Provide client full details about your projects and show their
+											quality.</div>
+									</div>
+									<div class="image titlt" data-tilt data-tilt-max="4">
+										<img src="images/background/project.png" alt="Mawj Platform Projects Details" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Column -->
+						<div class="column col-lg-6 col-md-12 col-sm-12">
+
+							<!-- Services Block -->
+							<div class="services-block style-two">
+								<div class="inner-box">
+									<div class="content">
+
+										<h5><a href="services.html">Let People Review your Projects</a></h5>
+										<div class="text">Get people's opinions about your published projects and
+											receive a rating to motivate users to contact you more.</div>
+										<a href="services.html" class="explore">Explore <span class="arrow"><img
+													src="images/icons/arrow-2.png" alt="" /></span></a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Services Block -->
+							<div class="services-block style-three">
+								<div class="inner-box">
+									<div class="content">
+
+										<h5><a href="services.html">Get Prospective Client</a></h5>
+										<div class="text">We let prospective clients easily reach you and order your
+											service</div>
+										<a href="services.html" class="explore">Explore <span class="arrow"><img
+													src="images/icons/arrow-2.png" alt="" /></span></a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Services Block -->
+							<div class="services-block style-four">
+								<div class="inner-box">
+									<div class="content">
+
+										<h5><a href="services.html">Get Approved User and Secure your Lead</a></h5>
+										<div class="text">Mawj Platform provide you real people and secure you from
+											being scamed</div>
+										<a href="services.html" class="explore">Explore <span class="arrow"><img
+													src="images/icons/arrow-2.png" alt="" /></span></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Services Section -->
+
+
+
+
+
+		<div class="unique-company-section">
+			<div class="unique-arrow unique-arrow-left">&#9664;</div>
+			<div class="unique-company-wrapper">
+				<div class="unique-company-slider" id="uniqueCompanySlider">
+					<!-- Company items will be dynamically injected here -->
+				</div>
+			</div>
+			<div class="unique-arrow unique-arrow-right">&#9654;</div>
+		</div>
+
+		<style>
+			.unique-company-slider {
+				display: flex;
+				overflow-x: auto;
+				scroll-behavior: smooth;
+				padding: 10px;
+				/* Adds padding around the slider */
+			}
+
+			.unique-company-slider .news-block-three {
+				flex: 0 0 auto;
+				/* Prevent flex items from shrinking or growing */
+				width: 300px;
+				/* Set width for each item */
+				height: 400px;
+				/* Adjust height to fit content */
+				margin: 10px;
+				/* Margin between items */
+				box-sizing: border-box;
+				/* Include padding and border in the width and height */
+				display: flex;
+				flex-direction: column;
+				/* Stack image and text vertically */
+				overflow: hidden;
+				/* Ensure that overflow content is hidden */
+			}
+
+			.unique-company-slider .news-block-three .image {
+				width: 100%;
+				height: 60%;
+				/* Adjust this percentage based on image height */
+				overflow: hidden;
+				/* Ensure that overflow content is hidden */
+				display: flex;
+				align-items: center;
+				/* Center the image vertically */
+				justify-content: center;
+				/* Center the image horizontally */
+			}
+
+			.unique-company-slider .news-block-three .image img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				/* Make sure the whole image is visible */
+				display: block;
+			}
+
+			.unique-company-slider .news-block-three .lower-content {
+				padding: 10px;
+				height: 40%;
+				/* Adjust this percentage to fit text */
+				box-sizing: border-box;
+				/* Include padding in the height */
+				overflow: hidden;
+				/* Prevent overflow */
+				display: flex;
+				flex-direction: column;
+				/* Stack content vertically */
+				justify-content: flex-start;
+				/* Align text at the top */
+			}
+
+			.unique-company-slider .news-block-three .lower-content h5 {
+				margin: 0;
+				/* Remove default margins */
+				font-size: 16px;
+				/* Adjust font size as needed */
+				overflow: hidden;
+				/* Ensure text doesn't overflow */
+				text-overflow: ellipsis;
+				/* Add ellipsis if text overflows */
+				white-space: nowrap;
+				/* Prevent text from wrapping */
+			}
+		</style>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const container = document.getElementById('uniqueCompanySlider');
+				if (!container) {
+					console.error('Container element not found.');
+					return;
+				}
+
+				const arrowLeft = document.querySelector('.unique-arrow-left');
+				const arrowRight = document.querySelector('.unique-arrow-right');
+
+				function scrollLeft() {
+					container.scrollBy({
+						left: -250, // Adjust this value as needed
+						behavior: 'smooth'
+					});
+				}
+
+				function scrollRight() {
+					container.scrollBy({
+						left: 250, // Adjust this value as needed
+						behavior: 'smooth'
+					});
+				}
+
+				arrowLeft.addEventListener('click', scrollLeft);
+				arrowRight.addEventListener('click', scrollRight);
+
+				// Fetch companies data
+				const apiUrl = 'https://mawjplatform.com/API/mobile_api/web-companies.php?key=2022@mec*app&page=';
+				let currentPage = 1;
+				let hasMoreData = true;
+
+				function fetchCompanies(page) {
+					console.log(`Fetching page ${page}...`);
+					fetch(apiUrl + page)
+						.then(response => {
+							console.log(`Response status for page ${page}: ${response.status}`);
+							if (!response.ok) {
+								throw new Error(`HTTP error! Status: ${response.status}`);
+							}
+							return response.json();
+						})
+						.then(data => {
+							console.log(`Page ${page} response:`, data);
+							if (data.success && Array.isArray(data.company) && data.company.length > 0) {
+								data.company.forEach(company => {
+									const imageUrl = company.shop_banner ? `https://mawjplatform.com/mec/${company.shop_banner}` : 'https://mawjplatform.com/mec/images/resource/default.jpg';
+									const logoUrl = company.shop_logo ? `https://mawjplatform.com/mec/${company.shop_logo}` : 'https://mawjplatform.com/mec/images/resource/default.jpg';
+
+									const companyHtml = `
+                            <div class="news-block-three">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <a href="viewcompany.html?id=${company.u_id}">
+                                            <img src="${imageUrl}" alt="${company.shop_name || 'Company Name'}" />
+                                        </a>
+                                    </div>
+                                    <div class="lower-content">
+                                        <div class="author-info">
+                                            <span class="author-image">
+                                                <img src="${logoUrl}" alt="${company.shop_name || 'Company Logo'}" />
+                                            </span>
+                                           
+                                        </div>
+                                        <div class="category">${company.sc_title || 'Category not available'}</div>
+                                        <h5 class="scrolling-text">
+                                            <a href="viewcompany.html?id=${company.u_id}">
+                                                <span>${company.shop_name || 'Company Name'}</span>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+									container.insertAdjacentHTML('beforeend', companyHtml);
+								});
+
+								// Duplicate items for infinite scroll effect
+								const items = container.querySelectorAll('.news-block-three');
+								if (items.length > 0) {
+									const cloneItems = Array.from(items).map(item => item.cloneNode(true));
+									container.append(...cloneItems);
+								}
+
+								currentPage++;
+								if (hasMoreData) {
+									fetchCompanies(currentPage);
+								}
+							} else {
+								console.log(`No more data available after page ${page}.`);
+								hasMoreData = false;
+							}
+						})
+						.catch(error => {
+							console.error(`Error fetching page ${page}:`, error);
+							hasMoreData = false;
+						});
+				}
+
+				// Initialize fetching
+				fetchCompanies(currentPage);
+
+				// Handle scroll events to loop back
+				container.addEventListener('scroll', () => {
+					const scrollLeft = container.scrollLeft;
+					const containerWidth = container.scrollWidth;
+					const clientWidth = container.clientWidth;
+
+					if (scrollLeft >= containerWidth / 2) {
+						container.scrollLeft = 0; // Reset scroll position
+					}
+				});
+			});
+
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Testimonial Section Two -->
+		<section class="testimonial-section-two">
+			<div class="auto-container">
+				<!-- Title Box -->
+				<div class="title-box">
+					<h2>From Mawj Platform <br> community</h2>
+				</div>
+
+				<div class="single-item-carousel owl-carousel owl-theme">
+
+					<!-- Testimonial Block Two -->
+					<div class="testimonial-block-two">
+						<div class="inner-box">
+							<div class="pattern-layer-one"
+								style="background-image:url(images/background/pattern-5.png)"></div>
+							<div class="row clearfix">
+
+								<!-- Content Column -->
+								<div class="content-column col-lg-6 col-md-12 col-sm-12">
+									<div class="inner-column">
+										<!-- <div class="icon-layer-one"
+											style="background-image:url(images/icons/icon-12.png)">
+										</div> -->
+										<div class="author-info-box">
+											<div class="box-inner">
+												<div class="author-image">
+													<img src="images/resource/yazan.jpeg"
+														alt="Yazen Alsouqi interview with Mawj Platform" />
+												</div>
+												<h5>En. Yazen Alsouqi</h5>
+												<div class="designation">Civil Construction Manager </div>
+											</div>
+										</div>
+
+										<div class="text">Great interview has been conducted with Mawj Platform. We have
+											discussed with him
+											some topics such as Strategies, steps,
+											project management methods, identifying problems and solving them,
+											presenting projects, the impact of technology</div>
+										<div class="lower-text">
+											Hope you enjoy the full interview and let us know about your thoughts about
+											the topics.
+										</div>
+										<a target="_blank" href="https://www.youtube.com/watch?v=BXdds2FwS3E"
+											class="btn-style-three"><span class="txt">Watch
+												Interview</span>
+										</a>
+
+									</div>
+								</div>
+
+								<!-- Image Column -->
+								<div class="image-column col-lg-6 col-md-12 col-sm-12">
+									<div class="inner-column">
+										<!-- <div class="icon-layer-two"
+											style="background-image:url(images/icons/icon-11.png)">
+										</div> -->
+										<div class="image">
+											<img src="images/background/yazan.jpg"
+												alt="Mr Yazan Alsouqi with Mawj Platform" />
+										</div>
+
+										<div class="quote-icon flaticon-quote-2"></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial Block Two -->
+
+					<!-- Testimonial Block Two -->
+
+
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+		<!-- Clients Section Two / Style Two -->
+		<section class="clients-section-two style-two">
+			<div class="auto-container">
+				<!-- Title Box -->
+				<div class="title-box">
+					<div class="title">As Seen on</div>
+					<h2>We collaborate with <span>100+ leading</span> <br>Companies</h2>
+				</div>
+				<div class="sponsors-outer">
+					<!--Sponsors Carousel-->
+					<ul class="sponsors-carousel owl-carousel owl-theme">
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo1.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo2.png" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo3.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo4.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo5.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo6.png" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo7.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo8.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo9.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo10.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo11.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo12.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/logo13.jpg" alt=""></a></figure>
+						</li>
+						<li class="slide-item">
+							<figure class="image-box"><a href="#"><img src="images/akkad.png" alt=""></a></figure>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- End Clients Section Two / Style Two -->
+
+
+
+		<!-----the blogs API-->
+
+		<div class="index-page">
+			<!-- Your HTML structure -->
+			<div class="company-section">
+				<div class="arrow arrow-left" onclick="scrollLeft()">&#9664;</div>
+				<div class="company-wrapper">
+					<div class="company-container" id="companyContainer">
+						<!-- Company blocks will be dynamically injected here using the API -->
+					</div>
+				</div>
+				<div class="arrow arrow-right" onclick="scrollRight()">&#9654;</div>
+			</div>
+
+			<!-- Inline style tag for the specific div -->
+
+
+			<script>
+				document.addEventListener('DOMContentLoaded', () => {
+					const container = document.getElementById('companyContainer');
+					const scrollAmount = 200; // Adjust this value as needed for smooth scrolling
+
+					function scrollLeft() {
+						if (container) {
+							container.scrollBy({
+								left: -scrollAmount, // Scroll left
+								behavior: 'smooth'
+							});
+						}
+					}
+
+					function scrollRight() {
+						if (container) {
+							container.scrollBy({
+								left: scrollAmount, // Scroll right
+								behavior: 'smooth'
+							});
+						}
+					}
+
+					// Attach scroll functions to the arrow buttons
+					document.querySelector('.arrow-left').addEventListener('click', scrollLeft);
+					document.querySelector('.arrow-right').addEventListener('click', scrollRight);
+				});
+			</script>
+		</div>
+
+		<!------the blogs using API ends-->
+
+
+		<section class="newsletter-section">
+			<div class="auto-container">
+				<h2>Signup to our newsletter</h2>
+				<!-- Newsletter Form -->
+				<div class="newsletter-form">
+					<form method="post" action="contact.html">
+						<div class="form-group">
+							<input type="email" name="email" value="" placeholder="Enter your eamil address" required>
+							<button type="submit" class="flaticon-next-2 submit-btn"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</section>
+		<!-- End Newsletter Section -->
+
+		<!-- Main Footer / Style Two -->
+		<footer class="main-footer style-two">
+			<!-- <div class="pattern-layer-one" style="background-image: url(images/icons/icon-9.png)"></div>
+			<div class="pattern-layer-two" style="background-image: url(images/icons/icon-3.png)"></div>
+			<div class="pattern-layer-three" style="background-image: url(images/icons/pattern-7.png)"></div>
+			<div class="pattern-layer-four" style="background-image: url(images/icons/icon-10.png)"></div> -->
+			<div class="auto-container">
+				<!-- Upper Box -->
+				<div class="upper-box">
+					<div class="logo">
+						<a href="index.html"><img src="images/footer-logo.png" alt="Mawj Platform" /></a>
+					</div>
+					<div class=" clearfix">
+						<div class="pull-left">
+							<div class="phone">
+								<strong>Call us</strong>
+								<a href=tel:+ 971565966295">+971565966295</a>
+							</div>
+						</div>
+						<div class="pull-right">
+							<!-- Social Box -->
+							<ul class="social-box">
+								<li><a href="https://www.facebook.com/profile.php?id=61557832393900&mibextid=ZbWKwL"
+										class="fa fa-facebook-f"></a></li>
+								<li><a href="https://www.instagram.com/mawjplatform/" class="fa fa-instagram"></a></li>
+								<!-- <li><a href="#" class="fa fa-pinterest-p"></a></li> -->
+								<li><a href="https://www.youtube.com/@MawjPlatform" class="fa fa-youtube-play"></a></li>
+								<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- End Upper Box -->
+
+				<!-- Widgets Section -->
+				<div class="widgets-section">
+					<div class="row clearfix">
+
+						<!-- Column -->
+						<div class="big-column col-lg-6 col-md-12 col-sm-12">
+							<div class="row clearfix">
+
+								<!-- Footer Column -->
+
+								<!-- Footer Column -->
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget link-widget">
+										<h5><a href="contact.html">Contact Us</a></h5>
+										<ul class="link-list">
+											<div class="text">Abu Dhabi, UAE</div>
+											<ul class="contact-list">
+												<li>Email: <a
+														href="mailto:info@mawjplatform.com">info@mawjplatform.com</a>
+												</li>
+
+											</ul>
+										</ul>
+									</div>
+								</div>
+
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget info-widget">
+										<h5><a href="about.html">About Us</a></h5>
+										<ul class="link-list">
+											<li><a href="about.html">Mission</a></li>
+											<li><a href="about.html">Vision</a></li>
+											<li><a href="about.html">Testimonials</a></li>
+
+										</ul>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+
+						<!-- Column -->
+						<div class="big-column col-lg-6 col-md-12 col-sm-12">
+							<div class="row clearfix">
+
+								<!-- Footer Column -->
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget info-widget">
+										<h5><a href="services.html">Services</a></h5>
+										<ul class="link-list">
+											<li><a href="services.html">Business</a></li>
+											<li><a href="services.html">Solutions</a></li>
+											<li><a href="services.html">Register</a></li>
+
+										</ul>
+									</div>
+								</div>
+
+								<!-- Footer Column -->
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget link-widget">
+										<h5><a href="companies.html">Companies</a></h5>
+										<ul class="link-list">
+											<li><a href="companies.html">listings</a></li>
+											<li><a href="blog.html">Blogs</a></li>
+											<li><a href="contact.html">Signup</a></li>
+
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="copyright">Copyright 2024, All Right Reserved</div>
+					<div class="copyright" style="font-size: small;"><a
+							href="https://mawjplatform.com/privacy.php">Terms and Services</a></div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- End Main Footer -->
+
+	</div>
+	<!--End pagewrapper-->
+
+	<!-- Header Search -->
+	<div class="search-popup">
+		<button class="close-search style-two"><span class="flaticon-multiply"></span></button>
+		<button class="close-search"><span class="flaticon-multiply"></span></button>
+		<form method="post" action="blog.html">
+			<div class="form-group">
+				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</form>
+	</div>
+	<!-- End Header Search -->
+
+	<!-- Scroll To Top -->
+	<div class="scroll-to-tops scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/nav-tool.js"></script>
+	<script src="js/mixitup.js"></script>
+	<script src="js/owl.js"></script>
+	<script src="js/tilt.jquery.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/route.js" defer></script>
+	<script src="js/route.js"></script>
+	<script src="js/fetch-companies.js"></script>
+</body>
+
+</html>
