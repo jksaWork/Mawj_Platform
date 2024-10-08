@@ -418,21 +418,24 @@
 			smartSpeed: 500,
 			autoplay: 5000,
 			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
-			responsive:{
-				0:{
-					items:1
+			responsive: {
+				0: {
+					items:2 // 1 item for very small screens (phones)
 				},
-				600:{
-					items:2
+				320: {
+					items: 2 // You can specify additional breakpoints for more granular control if needed
 				},
-				800:{
-					items:2
+				480: {
+					items: 2 // 2 items for small screens
 				},
-				1024:{
-					items:3
+				600: {
+					items: 3 // 3 items for medium screens
 				},
-				1200:{
-					items:3
+				800: {
+					items: 4 // 4 items for larger screens
+				},
+				1024: {
+					items: 5 // 5 items for desktop
 				}
 			}
 		});    		
@@ -441,35 +444,35 @@
 	
 	
 	
-	// Sponsors Carousel
-	if ($('.sponsors-carousel').length) {
-		$('.sponsors-carousel').owlCarousel({
-			loop:true,
-			margin:0,
-			nav:true,
-			smartSpeed: 500,
-			autoplay: 4000,
-			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
-			responsive:{
-				0:{
-					items:1
-				},
-				480:{
-					items:2
-				},
-				600:{
-					items:3
-				},
-				800:{
-					items:4
-				},
-				1024:{
-					items:5
-				}
-			}
-		});    		
-	}
-	
+// Sponsors Carousel
+if ($('.sponsors-carousel').length) {
+    $('.sponsors-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        smartSpeed: 500,
+        autoplay: 3000,
+        // navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
+        responsive: {
+            0: {
+                items: 1 // Show 1 item on extra small screens
+            },
+            480: {
+                items: 2 // Show 2 items on small screens
+            },
+            600: {
+                items: 3 // Show 3 items on medium screens
+            },
+            800: {
+                items: 4 // Show 4 items on larger screens
+            },
+            1024: {
+                items: 5 // Show 5 items on desktop
+            }
+        }
+    });    		
+}
+
 	
 	
 	

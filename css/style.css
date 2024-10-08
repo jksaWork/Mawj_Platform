@@ -5581,7 +5581,7 @@ img {
 	right: 0px;
 	top: -120px;
 	bottom: 0px;
-	width: 360px;
+	/* width: 360px; */
 	height: 550px;
 	background-color: #3e75aa;
 }
@@ -6177,8 +6177,7 @@ img {
 
 .clients-section-two {
 	position: relative;
-	padding-top: 30px;
-	padding-bottom: 100px;
+
 }
 
 .clients-section-two .title-box {
@@ -6220,9 +6219,6 @@ img {
 	display: none;
 }
 
-.clients-section-two.style-two {
-	padding-top: 100px;
-}
 
 .clients-section-two.style-three {
 	padding-top: 120px;
