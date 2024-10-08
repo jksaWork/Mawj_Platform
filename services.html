@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -919,4 +920,937 @@ navLinks.forEach(function(link) {
 
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Services and Products| Mawj Platform</title>
+<style>
+.navigation li {
+    position: relative;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #000; 
+    padding: 10px;
+    display: inline-block;
+	transition: color 0.3s ease;
+}
+
+.navigation li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 20px; 
+    width: 100%;
+    height: 2px; 
+    background-color: #fc9a36; 
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+.navigation li a.active {
+    color: #fc9a36;
+}
+
+
+.navigation li a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+	.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+}
+.navigation li a.active {
+    color: #fc9a36 !important; 
+}
+
+.pricing-box {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  min-height: 500px; /* Increased height */
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing-box.free {
+  border: 1px solid #d4d4d4;
+}
+
+.pricing-box.paid {
+  border: 1px solid #0073e6;
+}
+
+.pricing-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recommended-badge {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: scale(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.pricing-box.paid:hover .recommended-badge {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.pricing-header {
+  margin: 20px 0;
+}
+
+.pricing-header h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #62798f;
+}
+
+.pricing-header p {
+  font-size: 28px;
+  color: #212529;
+  margin: 10px 0;
+}
+
+.pricing-header span {
+  font-size: 20px;
+  color: #666;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-features li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #666;
+}
+
+.pricing-btn {
+  background-color: #62798f;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-btn:hover {
+  background-color: #fc9a36;
+}
+</style>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merienda:wght@400;700&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header -->
+   <!-- Main Header -->
+		<header class="main-header header-style-two">
+
+			<!-- Header Lower -->
+			<div class="header-lower">
+				<div class="auto-container">
+					<div class="inner-container clearfix">
+
+						<div class="pull-left logo-box">
+							<div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="Mawj Platform"
+										title=""></a>
+							</div>
+						</div>
+
+						<div class="pull-right nav-outer clearfix">
+							<!-- Mobile Navigation Toggler -->
+							<div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span></div>
+							<!-- Main Menu -->
+							<nav class="main-menu show navbar-expand-md">
+
+								<div class="navbar-header">
+									<button class="navbar-toggler" type="button" data-toggle="collapse"
+										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+										aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								
+								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+
+										<li><a style="color: #f1f5f8;font-weight: 600;" href="index.html">Home</a></li>
+										<li><a style="color: #f1f5f8;font-weight: 600;" href="about.html">About us</a>
+										</li>
+										<li><a style="color: #f1f5f8;font-weight: 600;"
+												href="services.html">Services</a></li>
+										<li><a style="color: #f1f5f8;font-weight: 600;"
+												href="companies.html">Companies</a></li>
+										<li><a style="color: #f1f5f8;font-weight: 600;" href="blog.html">Blogs</a></li>
+										<li><a style="color: #f1f5f8;font-weight: 600;" href="contact.html">Contact
+												us</a></li>
+									</ul>
+								</div>
+
+								<script>
+									document.addEventListener('DOMContentLoaded', function () {
+										// Get the current page URL
+										var currentUrl = window.location.href;
+
+										// Get all the navigation links
+										var navLinks = document.querySelectorAll('.navigation li a');
+
+										// Loop through each link
+										navLinks.forEach(function (link) {
+											// Check if the link's href matches the current URL
+											if (link.href === currentUrl) {
+												link.classList.add('active');
+											}
+										});
+									});
+
+								</script>
+
+							</nav>
+							<!-- Main Menu End-->
+
+							<!-- Outer Box -->
+
+							<div class="outer-box">
+
+								<!-- Search Btn -->
+								<!-- <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span>
+								</div> -->
+
+								<!-- Cart Box -->
+								<!-- <div class="cart-box">
+									<div class="dropdown">
+										<button class="cart-box-btn dropdown-toggle" type="button" id="dropdownMenu2"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+												class="flaticon-shopping-cart-1"></span></button>
+										<div class="dropdown-menu pull-right cart-panel"
+											aria-labelledby="dropdownMenu2">
+
+											<div class="cart-product">
+												<div class="inner">
+													<div class="cross-icon"><span class="icon fa fa-remove"></span>
+													</div>
+													<div class="image"><img src="images/resource/post-thumb-1.jpg"
+															alt="" /></div>
+													<h3><a href="shop-single.html">Product 01</a></h3>
+													<div class="quantity-text">Quantity 1</div>
+													<div class="price">$99.00</div>
+												</div>
+											</div>
+											<div class="cart-product">
+												<div class="inner">
+													<div class="cross-icon"><span class="icon fa fa-remove"></span>
+													</div>
+													<div class="image"><img src="../images/resource/post-thumb-1.jpg">
+															alt="" /></div>
+													<h3><a href="shop-single.html">Product 02</a></h3>
+													<div class="quantity-text">Quantity 1</div>
+													<div class="price">$99.00</div>
+												</div>
+											</div>
+											<div class="cart-total">Sub Total: <span>$198</span></div>
+											<ul class="btns-boxed">
+												<li><a href="shoping-cart.html">View Cart</a></li>
+												<li><a href="checkout.html">CheckOut</a></li>
+											</ul>
+
+										</div>
+									</div>
+								</div> -->
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--End Header Upper-->
+
+			<!-- Mobile Menu  -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
+
+				<nav class="menu-box">
+					<div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt="Mawj Platform"
+								title=""></a></div>
+					<div class="menu-outer">
+						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+					</div>
+				</nav>
+			</div><!-- End Mobile Menu -->
+
+		</header>
+    <!-- End Main Header -->
+	
+    <!-- Page Title Section -->
+   
+    <!-- End Page Title Slider -->
+	
+	<!-- Process Section -->
+	<section class="process-section">
+		<div class="auto-container">
+			<!-- Sec Title / Centered -->
+			<div class="sec-title centered">
+				<div class="title">Our Services</div>
+				<h2>What We Can Do for Your <span>Business</span> <br> go Faster</h2>
+			</div>
+			
+			<!-- Fact Counter Three -->
+			<div class="fact-counter-three">
+				<div class="row clearfix">
+
+					<!-- Column -->
+					<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+						<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="content">
+								<div class="count-outer count-box alternate" style="color:#fc9a36;">
+									<span class="count-text" data-speed="2500" data-stop="500">0</span>+
+								</div>
+								<h6 class="counter-title" style="color:rgb(83, 77, 77);"><b>Accelerate Lead Generation:</b>unique leads generated monthly through our platform, helping you connect with potential clients faster.<br><br>
+
+
+
+								</h6>
+							</div>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+						<div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+							<div class="content">
+								<div class="count-outer count-box alternate" style="color:#fc9a36;">
+									<span class="count-text" data-speed="3000" data-stop="500">0</span>+
+								</div>
+								<h6 class="counter-title" style="color:rgb(83, 77, 77);"><b>Expand Your Reach Quickly:</b>projects showcased globally, increasing your exposure and attracting interest from a wider audience in less time.</h6>
+							</div>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+						<div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+							<div class="content">
+								<div class="count-outer count-box alternate" style="color:#fc9a36;">
+									<span class="count-text" data-speed="3000" data-stop="500">0</span>+
+								</div>
+								<h6 class="counter-title" style="color:rgb(83, 77, 77);"><b>Access Real-Time Insights:</b>industry experts providing up-to-date market data to help you make swift, informed decisions and stay ahead of competitors.</h6>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Process Section -->
+	
+	<!-- Certificate Section -->
+	<section class="certificate-section">
+		<div class="color-one"></div>
+		<div class="color-two"></div>
+		<div class="color-three"></div>
+		<div class="icon-layer-one" style="background-image:url(images/icons/icon-4.png)"></div>
+		<div class="icon-layer-two" style="background-image:url(images/icons/icon-15.png)"></div>
+		<div class="icon-layer-three" style="background-image:url(images/icons/icon-4.png)"></div>
+		<div class="icon-layer-four" style="background-image:url(images/icons/pattern-10.png)"></div>
+		<div class="icon-layer-five" style="background-image:url(images/icons/icon-3.png)"></div>
+		<div class="left-color-layer"></div>
+		<div class="right-color-layer"></div>
+		<div class="auto-container">
+			<div class="sec-title">
+				<h2 style="color:#fc9a36">Boost Your Growth with Our Innovative Solutions</h2>
+				<div class="text" style="color:rgb(51, 35, 36)">Explore our solutions and see how they can help your business grow</div>
+			</div>
+		</div>
+		<div class="outer-container">
+			<div class="row clearfix">
+
+				<div class="certificate-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon flaticon-bank"></span>
+						</div>
+						<h4 style="color:#fc9a36"><a href="services.html">Trusted Platform</a></h4>
+						<div class="text" style="color:black">A verified and secure platform that connects you with reliable partners and services. Builds confidence in your business decisions and ensures you’re working with trustworthy entities.</div>
+						<a class="explore" href="companies.html">Explore More</a>
+					</div>
+				</div>
+				<!-- Certificate Block -->
+				<div class="certificate-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon flaticon-user-2"></span>
+						</div>
+						<h4 style="color:#fc9a36"><a href="services.html">Be Seen Be Present</a></h4>
+						<div class="text" style="color:black">Discover Nearby Projects with our unique
+							application delivers impressive data of buildings
+							through easy navigation and innovative design while
+							providing market intelligence to our users</div>
+						<a class="explore" href="companies.html">Explore More</a>
+					</div>
+				</div>
+				
+				
+				<!-- Certificate Block -->
+				<div class="certificate-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon flaticon-darts"></span>
+						</div>
+						<h4 style="color:#fc9a36"><a href="services.html">Customized Strategies</a></h4>
+						<div class="text" style="color:black">Tailor-made solutions designed to meet your unique business needs. Maximizes your resources and aligns with your business goals.</div>
+						<a class="explore" href="companies.html">Explore More</a>
+					</div>
+				</div>
+				
+				<!-- Certificate Block -->
+				<div class="certificate-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon flaticon-pulse"></span>
+						</div>
+						<h4 style="color:#fc9a36"><a href="services.html">Market Insights</a></h4>
+						<div class="text" style="color:black">In-depth analysis and insights into market trends and consumer behavior. Helps in making informed decisions and staying ahead of the competition.</div>
+						<a class="explore" href="companies.html">Explore More</a>
+					</div>
+				</div>
+				
+				<!-- Certificate Block -->
+				<div class="certificate-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon flaticon-portfolio"></span>
+						</div>
+						<h4 style="color:#fc9a36"><a href="services.html">Enhanced Visibility</a></h4>
+						<div class="text" style="color:black">Strategies to boost your brand’s presence across various platforms. Increases brand awareness and attracts potential clients.</div>
+						<a class="explore" href="companies.html">Explore More</a>
+					</div>
+				</div>
+				
+				<!-- Certificate Block -->
+				<div class="certificate-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon flaticon-page-speed"></span>
+						</div>
+						<h4 style="color:#fc9a36"><a href="services.html">Lead Generation</a></h4>
+						<div class="text" style="color:black"> Innovative techniques to generate high-quality leads. Expands your client base and drives sales growth.</div>
+						<a class="explore" href="companies.html">Explore More</a>
+					</div>
+				</div>
+				
+				<!-- Certificate Block -->
+				<div class="certificate-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon flaticon-brainstorming"></span>
+						</div>
+						<h4 style="color:#fc9a36"><a href="services.html">Technology Integration</a></h4>
+						<div class="text" style="color:black">Leveraging the latest technology to streamline your operations. Improves efficiency and reduces operational costs.</div>
+						<a class="explore" href="companies.html">Explore More</a>
+					</div>
+				</div>
+				
+				<!-- Certificate Block -->
+				<div class="certificate-block col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="icon-box">
+							<span class="icon flaticon-handshake"></span>
+						</div>
+						<h4 style="color:#fc9a36"><a href="services.html">Ongoing Support</a></h4>
+						<div class="text" style="color:black">Continuous support and updates to ensure optimal performance. Keeps your business agile and adaptable to changes.</div>
+						<a class="explore" href="companies.html">Explore More</a>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Certificate Section -->
+	
+
+	<!------------price section---->
+
+	<div class="pricing-container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="pricing-box free">
+					<div class="pricing-header">
+					  <h2>Free Plan</h2>
+					  <p style="font-size:large; font-weight:900;">AED 0 <span>/Year</span></p>
+					</div>
+					<ul class="pricing-features">
+					  <li>Basic Features</li>
+					  <li>Limited projects to upload</li>
+					  <li>Minimal Reach</li>
+					  <li>No private tender</li>
+					</ul>
+					<a href="#" class="pricing-btn">Sign Up</a>
+				  </div>
+			</div>
+			<div class="col-md-6">
+				 <div class="pricing-box paid">
+					<div class="recommended-badge">Recommended</div>
+					<div class="pricing-header">
+					  <h2>Paid Plan</h2>
+					  <p style="font-size:large; font-weight:900;">AED 3000<span>/Year</span></p>
+					</div>
+					<ul class="pricing-features">
+					  <li>All Free Features</li>
+					  <li>Unlimited projects upload</li>
+					  <li>Maximum Reach</li>
+					  <li>Private/public tender</li>
+					  <li>Boosted profile</li>
+					</ul>
+					<a href="#" class="pricing-btn">Get Started</a>
+				  </div>
+			</div>
+		</div>
+	  </div>
+	  <script>
+		document.addEventListener('DOMContentLoaded', function() {
+		  var googlePlayURL = 'https://play.google.com/store/apps/details?id=com.uaeapplication.mawj';
+		  var appStoreURL = 'https://apps.apple.com/ae/app/mawj-platform/id6473839116';
+		  var contactPageURL = 'https://apps.apple.com/ae/app/mawj-platform/id6473839116'; 
+	  function redirectToDestination() {
+			var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+	  
+			if (/android/i.test(userAgent)) {
+			  window.location.href = googlePlayURL;
+			} else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+			  window.location.href = appStoreURL;
+			} else {
+			  window.location.href = contactPageURL;
+			}
+		  }
+	  
+		  
+		  var signUpBtn = document.querySelector('.pricing-box.free .pricing-btn');
+		  var getStartedBtn = document.querySelector('.pricing-box.paid .pricing-btn');
+	  
+		  if (signUpBtn) {
+			signUpBtn.addEventListener('click', function(event) {
+			  event.preventDefault();
+			  redirectToDestination();
+			});
+		  }
+	  
+		  if (getStartedBtn) {
+			getStartedBtn.addEventListener('click', function(event) {
+			  event.preventDefault();
+			  redirectToDestination();
+			});
+		  }
+		});
+	  </script>
+	  
+	  
+
+	<!--------end of price section-->
+
+
+
+	<!---testimonials-->
+	<section class="testimonial-section style-two">
+	
+		
+		
+		
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<div class="section-color-layer"></div>
+				<div class="title">Testimonial</div>
+				<h2>See what our customers say</h2>
+			</div>
+			<div class="testimonial-carousel owl-carousel owl-theme">
+
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-outer">
+							<div class="image">
+								<img src="images/ryan.jpeg" alt="" />
+							</div>
+							<div class="quote flaticon-left-quote"></div>
+						</div>
+						<h6 style="color:black;">Ryan</h6>
+						
+						<div class="text" style="color: black;">Mawj Platform is a very easy to use app, I can navigate smoothly, and it gives me accurate information that I need." -Highly Efficient and User-Friendly App</div>
+					</div>
+				</div>
+
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-outer">
+							<div class="image">
+								<img src="images/yasser.jpg" alt="" />
+							</div>
+							<div class="quote flaticon-left-quote"></div>
+						</div>
+						<h6 style="color:black;">Yasser Abubaker</h6>
+						
+						<div class="text" style="color: black;">كمهندس  كنت أبحث عن أداة تسهل علي الوصول إلى شركات الهندسة والعملاء بكفاءة أكبر، ووجدت أن تطبيق "Mawj" يقدم الحل المثالي لذلك.
+							من اللحظة الأولى لاستخدام التطبيق، أدهشني بساطته وفعاليته. التصميم بديهي وكل الخيارات مرتبة بشكل يجعل التنقل داخل التطبيق سهلاً جداً. سواء كنت أبحث عن مشروع جديد أو أرغب في التواصل مع عميل، وجدت أن "Mawj" يوفر لي كل ما أحتاجه من أدوات وخدمات.
+							إذا كنت تعمل في مجال الهندسة، فإنني أنصحك بتجربة "Mawj". فهو ليس مجرد تطبيق، بل هو شريك حقيقي يساعدك على تحقيق أهدافك المهنية بسهولة واحترافية.</div>
+					</div>
+				</div>
+
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-outer">
+							<div class="image">
+								<img src="images/Gem.jpg" alt="" />
+							</div>
+							<div class="quote flaticon-left-quote"></div>
+						</div>
+						<h6 style="color:black;">Gem</h6>
+						
+						<div class="text" style="color: black;">Ive found this amazing app that lets me reach the things that ive been looking for so long! Not only was i able to find the right designer for my project, ive come across various landscaping companies that makes it such a breeze to have the option and freedom for my future projects. It's a must have</div>
+					</div>
+				</div>
+
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-outer">
+							<div class="image">
+								<img src="images/Shama.jpg" alt="" />
+							</div>
+							<div class="quote flaticon-left-quote"></div>
+						</div>
+						<h6 style="color:black;">Shama</h6>
+						
+						<div class="text" style="color: black;">I came across this app recently and guys trust me this is a game changer. Eveything in the app seems to be verified which is why I could easily get what I needed in LITERALLY MINUTES!</div>
+					</div>
+				</div>
+
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-outer">
+							<div class="image">
+								<img src="images/Malek.jpg" alt="" />
+							</div>
+							<div class="quote flaticon-left-quote"></div>
+						</div>
+						<h6 style="color:black;">Malik Aldhafer</h6>
+						
+						<div class="text" style="color: black;">استخدمت تطبيق "Mawj" مؤخرًا، ووجدته مفيدًا للغاية للتعامل مع المشاريع الهندسية. أنا لست مهندسًا، لكنني كنت بحاجة إلى الاستعانة بخدمات هندسية لعدة مشاريع، وكان التطبيق بمثابة حبل النجاة.
+
+منذ اللحظة الأولى، كان استخدام التطبيق سهلًا للغاية. التصميم بسيط وكل شيء كان واضحًا ومباشرًا. تمكنت من العثور على المهندسين والشركات المناسبة بسرعة، والتواصل معهم مباشرة من خلال التطبيق.</div>
+					</div>
+				</div>
+
+				<!-- Testimonial Block -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-outer">
+							<div class="image">
+								<img src="images/Amr.jpg" alt="" />
+							</div>
+							<div class="quote flaticon-left-quote"></div>
+						</div>
+						<h6 style="color:black;">Amr</h6>
+						
+						<div class="text" style="color: black;">The Mawj Platform exceeded my expectations! Its intuitive design made navigating a breeze, and I found everything I needed in no time. Highly recommend it for anyone seeking efficiency and reliability!</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="lower-text">Click the button for slide</div>
+		</div>
+	</section>
+
+	<!----end of testimonials-->
+	<!-- Trial Section -->
+	<section class="trial-section">
+		<div class="auto-container">
+			<div class="inner-container">
+				<div class="row clearfix">
+
+					<!-- Image Column -->
+					<div class="image-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="color-box-one"></div>
+							<div class="color-box-two"></div>
+							<div class="icon-layer-one" style="background-image:url(images/icons/pattern-10.png)">
+							</div>
+							<div class="image titlt" data-tilt data-tilt-max="4">
+								<img src="images/phone.png" alt="" style="width: 130%; height: auto; transform: scale(1.2); transform-origin: center;" />
+							</div>
+						</div>
+					</div>
+
+					<!-- Form Column -->
+					<div class="form-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="color-box"></div>
+					
+							<!-- Circle with text on top -->
+							<div class="circle-container">
+<div class="circle"></div>
+<h3 style="margin-bottom: 50px; color: black; margin-right: -155px;">&nbsp;&nbsp;&nbsp;&nbsp;Register your business and<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;get free 6-Months <br> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; trial today!</h3>
+</div>
+
+<!-- Default Form -->
+<div class="default-form style-two">
+<form method="post" action="contact.html">
+   
+
+	<!-- Form Group -->
+	<div class="form-group">
+		<input type="text" name="name" placeholder="Name" required>
+	</div>
+
+	<!-- Form Group -->
+	<div class="form-group">
+		<input type="email" name="email" placeholder="Email" required>
+	</div>
+
+	<!-- Form Group -->
+	<div class="form-group">
+		<textarea name="message" placeholder="Your Personal Message"></textarea>
+	</div>
+
+	<!-- Form Group -->
+	<div class="form-group">
+		<button type="submit" class="theme-btn btn-style-one">
+			<span class="txt">Send now</span>
+		</button>
+	</div>
+</form>
+</div>
+
+					
+						</div>
+					</div>
+					
+					
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Trial Section -->
+	
+	<!-- Newsletter Section Two -->
+	<section class="newsletter-section">
+	<div class="auto-container">
+		<h2 style="margin-top: 50px; margin: right 900px;">Signup to our newsletter</h2><br>
+		<!-- Newsletter Form -->
+		<div class="newsletter-form">
+			<form method="post" action="contact.html">
+				<div class="form-group">
+					<input type="email" name="email" value="" placeholder="Enter your eamil address" required>
+					<button type="submit" class="flaticon-next-2 submit-btn"></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+</section>
+<!-- End Newsletter Section -->
+
+<!-- Main Footer / Style Two -->
+<footer class="main-footer style-two">
+<!-- <div class="pattern-layer-one" style="background-image: url(images/icons/icon-9.png)"></div>
+<div class="pattern-layer-two" style="background-image: url(images/icons/icon-3.png)"></div>
+<div class="pattern-layer-three" style="background-image: url(images/icons/pattern-7.png)"></div>
+<div class="pattern-layer-four" style="background-image: url(images/icons/icon-10.png)"></div> -->
+<div class="auto-container">
+<!-- Upper Box -->
+<div class="upper-box">
+<div class="logo">
+<a href="index.html"><img src="images/footer-logo.png" alt="Mawj Platform" /></a>
+</div>
+<div class=" clearfix">
+<div class="pull-left">
+<div class="phone">
+<strong>Call us</strong>
+<a href="mailto:971565966295">+971565966295</a>
+</div>
+</div>
+<div class="pull-right">
+<!-- Social Box -->
+<ul class="social-box">
+	<li><a href="https://www.facebook.com/profile.php?id=61557832393900&mibextid=ZbWKwL" class="fa fa-facebook-f"></a></li>
+	<li><a href="https://www.instagram.com/mawjplatform/" class="fa fa-instagram"></a></li>
+	<!-- <li><a href="#" class="fa fa-pinterest-p"></a></li> -->
+	<li><a href="https://www.youtube.com/@MawjPlatform" class="fa fa-youtube-play"></a></li>
+	<!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
+</ul>
+</div>
+</div>
+</div>
+<!-- End Upper Box -->
+
+<!-- Widgets Section -->
+<div class="widgets-section">
+<div class="row clearfix">
+
+<!-- Column -->
+<div class="big-column col-lg-6 col-md-12 col-sm-12">
+<div class="row clearfix">
+
+<!-- Footer Column -->
+<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+	<div class="footer-widget link-widget">
+		<h5><a href="contact.html">Contact Us</a></h5>
+		<ul class="link-list">
+			<div class="text">Abu Dhabi, UAE</div>
+		<ul class="contact-list">
+			<li>Email: <a href="mailto:info@mawjplatform.com">info@mawjplatform.com</a>
+			</li>
+	
+		</ul>
+		</ul>
+	</div>
+</div>
+
+<!-- Footer Column -->
+<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+<div class="footer-widget link-widget">
+<h5>About Us</h5>
+<ul class="link-list">
+<li><a href="about.html">Mission</a></li>
+<li><a href="about.html">Vision</a></li>
+<li><a href="about.html">Testimonials</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Column -->
+<div class="big-column col-lg-6 col-md-12 col-sm-12">
+<div class="row clearfix">
+
+<!-- Footer Column -->
+<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+<div class="footer-widget info-widget">
+<h5>Services</h5>
+<ul class="link-list">
+<li><a href="#">Business</a></li>
+<li><a href="#">Solutions</a></li>
+<li><a href="#">Register</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Footer Column -->
+<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+<div class="footer-widget link-widget">
+<h5>Companies</h5>
+<ul class="link-list">
+<li><a href="companies.html">listings</a></li>
+<li><a href="blog.html">Blogs</a></li>
+<li><a href="contact.html">Signup</a></li>
+
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="footer-bottom">
+<div class="copyright">Copyright 2024, All Right Reserved</div>
+<div class="copyright" style="font-size: small;"><a href="https://mawjplatform.com/privacy.php">Terms and Services</a></div>
+</div>
+
+</div>
+</footer>
+	<!-- End Newsletter Section Two -->
+	
+	
+
+<!-- Scroll To Top -->
+<div class="scroll-to-tops scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/nav-tool.js"></script>
+<script src="js/mixitup.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/tilt.jquery.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/jquery-ui.js"></script>		
+<script src="js/script.js"></script>
+
+
+</body>
+>>>>>>> dd7f35ff432aa9d063afdd0909376ba226a52ed2
 </html>
