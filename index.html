@@ -108,11 +108,7 @@
 										<span class="icon-bar"></span>
 									</button>
 								</div>
-								<div class="language-switcher" style="margin-left: 15px;">
-									<a href="index.html">English</a> |
-									<a href="index.html">العربية</a>
-								</div>
-
+								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
 
@@ -284,10 +280,10 @@
 				<div class="inner-container">
 					<!-- Fact Counter -->
 					<div class="fact-counter style-two">
-						<div class="row clearfix">
+						<div class="row clearfix align-items-center justify-content-center">
 
 							<!--Column-->
-							<div class="column counter-column col-lg-3 col-md-6 col-sm-12" style="margin-left:175px;">
+							<div class="column counter-column col-lg-3 col-md-6 col-sm-12">
 								<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 									<div class="content">
 										<div class="icon flaticon-value"></div>
@@ -520,16 +516,18 @@
 
 
 
-		<div class="unique-company-section">
-			<div class="unique-arrow unique-arrow-left">&#9664;</div>
-			<div class="unique-company-wrapper">
-				<div class="unique-company-slider" id="uniqueCompanySlider">
-					<!-- Company items will be dynamically injected here -->
+		<div class="auto-container">
+			<div class="unique-company-section">
+				<div class="unique-arrow unique-arrow-left">&#9664;</div>
+				<div class="unique-company-wrapper">
+					<div class="unique-company-slider" id="uniqueCompanySlider">
+						<!-- Company items will be dynamically injected here -->
+					</div>
 				</div>
+				<div class="unique-arrow unique-arrow-right">&#9654;</div>
 			</div>
-			<div class="unique-arrow unique-arrow-right">&#9654;</div>
+	
 		</div>
-
 		<style>
 			.unique-company-slider {
 				display: flex;
@@ -544,7 +542,7 @@
 				/* Prevent flex items from shrinking or growing */
 				width: 300px;
 				/* Set width for each item */
-				height: 400px;
+				/* height: 400px; */
 				/* Adjust height to fit content */
 				margin: 10px;
 				/* Margin between items */
@@ -559,7 +557,7 @@
 
 			.unique-company-slider .news-block-three .image {
 				width: 100%;
-				height: 60%;
+				height: 140px;
 				/* Adjust this percentage based on image height */
 				overflow: hidden;
 				/* Ensure that overflow content is hidden */
@@ -580,7 +578,7 @@
 
 			.unique-company-slider .news-block-three .lower-content {
 				padding: 10px;
-				height: 40%;
+				/* height: 40%; */
 				/* Adjust this percentage to fit text */
 				box-sizing: border-box;
 				/* Include padding in the height */
@@ -605,6 +603,8 @@
 				white-space: nowrap;
 				/* Prevent text from wrapping */
 			}
+
+			
 		</style>
 
 		<script>
@@ -883,16 +883,19 @@
 
 		<div class="index-page">
 			<!-- Your HTML structure -->
-			<div class="company-section">
-				<div class="arrow arrow-left" onclick="scrollLeft()">&#9664;</div>
-				<div class="company-wrapper">
-					<div class="company-container" id="companyContainer">
-						<!-- Company blocks will be dynamically injected here using the API -->
+			<div class="auto-container">
+				<div class="company-section">
+					<div class="arrow arrow-left" onclick="scrollLeft()">&#9664;</div>
+				
+	
+					<div class="company-wrapper">
+						<div class="company-container" id="companyContainer">
+							<!-- Company blocks will be dynamically injected here using the API -->
+						</div>
 					</div>
+					<div class="arrow arrow-right" onclick="scrollRight()">&#9654;</div>
 				</div>
-				<div class="arrow arrow-right" onclick="scrollRight()">&#9654;</div>
 			</div>
-
 			<!-- Inline style tag for the specific div -->
 
 
