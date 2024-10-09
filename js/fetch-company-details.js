@@ -84,10 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p id="email" style="color:#000" >${email}</p>
                         <p id="experience" style="color:#000" >Experience: ${experience}</p>
                         <div class="social-links" style="color:#000">
-                            <a id="linkedin" href="${linkedin}" style="color:#000" target="_blank">LinkedIn</a>
-                            <a id="facebook" href="${facebook}" style="color:#000" target="_blank">Facebook</a>
-                            <a id="instagram" href="${instagram}" style="color:#000"  target="_blank">Instagram</a>
-                            <a id="twitter" href="${twitter}" style="color:#000"  target="_blank">Twitter</a>
+                            <a id="linkedin" href="${linkedin}" style="color:#000" target="_blank"><i class="fa fa-brands fa-linkedin"></i></a>
+                            <a id="facebook" href="${facebook}" style="color:#000" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a id="instagram" href="${instagram}" style="color:#000"  target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
+                            <a id="twitter" href="${twitter}" style="color:#000"  target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
         container.innerHTML = `
-            <div class="company-view row align-items-start">
+            <div class="company-view row align-items-start custom_company_view">
                 <div class="view-inner-box col-md-8">
                     ${companyHtml}
                 </div>
@@ -135,6 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     loadCompany();
+
+    getCompanyProjects(getCompanyId())
+
 
     function sendLinkToWhatsApp(e) {
         e.preventDefault();
@@ -182,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (i === 3) break; // Stop at index 2
             
                 const el = projects[i]; // Get the current project element
-                projectHTML += `<div class="news-block-three cusom_card">
+                projectHTML += `<div class="cusom_card">
                     <div class="inner-box">
                         <div class="image">
                             <a href="projectview.html?id=${el.p_id}">
@@ -202,5 +205,4 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("projects_container").innerHTML = projectHTML;
     }
 
-    getCompanyProjects(269)
 });

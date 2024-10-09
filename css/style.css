@@ -9102,7 +9102,6 @@ img {
 
 .team-section {
 	position: relative;
-	padding: 100px 0px 70px;
 	background-color: #f3fbf7;
 }
 
@@ -15524,4 +15523,66 @@ h1 {
     /* transform: rotate(10deg); */
     background-color: #3e75aa;
 }
+}
+
+
+
+.cusom_card h5 {
+    margin: 10px 30px;
+    font-size: 16px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    /* white-space: nowrap;  */
+}
+
+.company-container {
+    display: flex;
+    gap: 20px; 
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.cusom_card .author-info, .cusom_card .category {
+    font-size: 14px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.company-container::-webkit-scrollbar {
+    display: none; 
+}
+
+.company-container {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.cusom_card {
+    display: inline-block;
+    width: 250px;
+    transition: transform 0.3s ease; 
+}
+
+.cusom_card .inner-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease; 
+}
+
+.cusom_card .image img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+.cusom_card:hover .inner-box {
+    transform: scale(1.05); 
+}
+
+.cusom_card .lower-content {
+    padding: 10px; 
 }
