@@ -1631,7 +1631,7 @@
 
   
 @media (max-width: 576px) {
-	.sec-title > h2{
+	  .sec-title > h2{
 		font-size: 25px;
 	  }
 	  #navbarSupportedContent li a {
